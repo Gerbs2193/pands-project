@@ -32,7 +32,7 @@ print(iris.describe())'''
 
 import pandas as pd
 
-# Load the iris dataset into a pandas dataframe
+'''# Load the iris dataset into a pandas dataframe
 iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
 
 # Get the variable descriptions
@@ -41,7 +41,60 @@ var_descriptions = iris.describe()
 # Write the variable descriptions to a text file
 with open('variable_descriptions.txt', 'w') as f:
     f.write(str(var_descriptions))
+'''
+'''import pandas as pd
+import matplotlib.pyplot as plt
 
+# Load the iris dataset into a pandas dataframe
+iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
 
+# Generate the histogram
+plt.hist(iris['sepal_length'], bins=20)
+plt.xlabel('Sepal Length (cm)')
+plt.ylabel('Frequency')
+plt.title('Histogram of Sepal Length')
+plt.savefig('sepal_length_histogram.png')
+plt.show()'''
 
+'''import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the iris dataset into a pandas dataframe
+iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
+
+# Generate the histogram
+plt.hist(iris['sepal_width'], bins=20)
+plt.xlabel('Sepal Width (cm)')
+plt.ylabel('Frequency')
+plt.title('Histogram of Sepal Width')
+plt.savefig('sepal_width_histogram.png')
+plt.show()'''
+
+'''import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the iris dataset into a pandas dataframe
+iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
+
+# Generate the histogram
+plt.hist(iris['petal_length'], bins=20)
+plt.xlabel('Petal Length (cm)')
+plt.ylabel('Frequency')
+plt.title('Histogram of Petal Length')
+plt.savefig('petal_length_histogram.png')
+plt.show()'''
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the iris dataset into a pandas dataframe
+iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
+
+# Generate the histogram
+plt.hist(iris['petal_width'], bins=20)
+plt.xlabel('Petal Width (cm)')
+plt.ylabel('Frequency')
+plt.title('Histogram of Petal Width')
+plt.savefig('petal_width_histogram.png')
+plt.show()
 
