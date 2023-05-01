@@ -84,7 +84,7 @@ plt.title('Histogram of Petal Length')
 plt.savefig('petal_length_histogram.png')
 plt.show()'''
 
-import pandas as pd
+'''import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the iris dataset into a pandas dataframe
@@ -97,4 +97,25 @@ plt.ylabel('Frequency')
 plt.title('Histogram of Petal Width')
 plt.savefig('petal_width_histogram.png')
 plt.show()
+'''
 
+
+import pandas as pd
+
+# Load the iris dataset into a pandas dataframe
+iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
+import matplotlib.pyplot as plt
+
+'''plt.scatter(iris['sepal_length'], iris['sepal_width'])
+plt.xlabel('Sepal Length')
+plt.ylabel('Sepal Width')
+plt.title('Scatter Plot: Sepal Length vs Sepal Width')
+plt.savefig('sepal_length_vs_sepal_width.png')
+plt.show()'''
+
+plt.scatter(iris['sepal_length'], iris['petal_length'])
+plt.xlabel('Sepal Length')
+plt.ylabel('Petal Length')
+plt.title('Scatter Plot: Sepal Length vs Petal Length')
+plt.savefig('sepal_length_vs_petal_length.png')
+plt.show()
