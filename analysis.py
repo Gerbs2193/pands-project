@@ -113,9 +113,18 @@ plt.title('Scatter Plot: Sepal Length vs Sepal Width')
 plt.savefig('sepal_length_vs_sepal_width.png')
 plt.show()'''
 
-plt.scatter(iris['sepal_length'], iris['petal_length'])
+'''plt.scatter(iris['sepal_length'], iris['petal_length'])
 plt.xlabel('Sepal Length')
 plt.ylabel('Petal Length')
 plt.title('Scatter Plot: Sepal Length vs Petal Length')
 plt.savefig('sepal_length_vs_petal_length.png')
+plt.show('''
+
+import matplotlib.pyplot as plt
+
+plt.scatter(iris['sepal_length'], iris['petal_width'])
+plt.xlabel('Sepal Length')
+plt.ylabel('Petal Width')
+plt.title('Scatter Plot: Sepal Length vs Petal Width')
+plt.savefig('sepal_length_vs_petal_width.png')
 plt.show()
