@@ -9,147 +9,18 @@ Create scatter plots of sepal length vs petal length, sepal length vs petal widt
 Add labels and titles to the scatter plots
 Color the scatter plots by class
 Create a function to generate scatter plots for any two variables and save them to png files
-Refactor the code to make it more modular and reusable
+Refactor the code to make it more modular and reusable'''
+
+
 
 import pandas as pd
 
 # Load the iris dataset into a pandas dataframe
 iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
 
-# Display the first few rows of the dataframe
-print(iris.head())
+# Calculate summary statistics for each variable
+summary_stats = iris.describe()
 
-import pandas as pd
-iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
-print(iris)
-import pandas as pd 
-'''
-'''import pandas as pd
-# Load the iris dataset into a pandas dataframe
-iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
-# Output a summary of each variable to the console
-print(iris.describe())'''
-
-import pandas as pd
-
-'''# Load the iris dataset into a pandas dataframe
-iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
-
-# Get the variable descriptions
-var_descriptions = iris.describe()
-
-# Write the variable descriptions to a text file
-with open('variable_descriptions.txt', 'w') as f:
-    f.write(str(var_descriptions))
-'''
-'''import pandas as pd
-import matplotlib.pyplot as plt
-
-# Load the iris dataset into a pandas dataframe
-iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
-
-# Generate the histogram
-plt.hist(iris['sepal_length'], bins=20)
-plt.xlabel('Sepal Length (cm)')
-plt.ylabel('Frequency')
-plt.title('Histogram of Sepal Length')
-plt.savefig('sepal_length_histogram.png')
-plt.show()'''
-
-'''import pandas as pd
-import matplotlib.pyplot as plt
-
-# Load the iris dataset into a pandas dataframe
-iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
-
-# Generate the histogram
-plt.hist(iris['sepal_width'], bins=20)
-plt.xlabel('Sepal Width (cm)')
-plt.ylabel('Frequency')
-plt.title('Histogram of Sepal Width')
-plt.savefig('sepal_width_histogram.png')
-plt.show()'''
-
-'''import pandas as pd
-import matplotlib.pyplot as plt
-
-# Load the iris dataset into a pandas dataframe
-iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
-
-# Generate the histogram
-plt.hist(iris['petal_length'], bins=20)
-plt.xlabel('Petal Length (cm)')
-plt.ylabel('Frequency')
-plt.title('Histogram of Petal Length')
-plt.savefig('petal_length_histogram.png')
-plt.show()'''
-
-'''import pandas as pd
-import matplotlib.pyplot as plt
-
-# Load the iris dataset into a pandas dataframe
-iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
-
-# Generate the histogram
-plt.hist(iris['petal_width'], bins=20)
-plt.xlabel('Petal Width (cm)')
-plt.ylabel('Frequency')
-plt.title('Histogram of Petal Width')
-plt.savefig('petal_width_histogram.png')
-plt.show()
-'''
-
-
-import pandas as pd
-
-# Load the iris dataset into a pandas dataframe
-iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
-'''import matplotlib.pyplot as plt'''
-
-'''plt.scatter(iris['sepal_length'], iris['sepal_width'])
-plt.xlabel('Sepal Length')
-plt.ylabel('Sepal Width')
-plt.title('Scatter Plot: Sepal Length vs Sepal Width')
-plt.savefig('sepal_length_vs_sepal_width.png')
-plt.show()'''
-
-'''plt.scatter(iris['sepal_length'], iris['petal_length'])
-plt.xlabel('Sepal Length')
-plt.ylabel('Petal Length')
-plt.title('Scatter Plot: Sepal Length vs Petal Length')
-plt.savefig('sepal_length_vs_petal_length.png')
-plt.show('''
-
-'''import matplotlib.pyplot as plt
-
-plt.scatter(iris['sepal_length'], iris['petal_width'])
-plt.xlabel('Sepal Length')
-plt.ylabel('Petal Width')
-plt.title('Scatter Plot: Sepal Length vs Petal Width')
-plt.savefig('sepal_length_vs_petal_width.png')
-plt.show()'''
-
-import matplotlib.pyplot as plt
-
-'''plt.scatter(iris['sepal_width'], iris['petal_length'])
-plt.xlabel('Sepal Width')
-plt.ylabel('Petal Length')
-plt.title('Scatter Plot: Sepal Width vs Petal Length')
-plt.savefig('sepal_width_vs_petal_length.png')
-plt.show()'''
-
-
-'''plt.scatter(iris['sepal_width'], iris['petal_width'])
-plt.xlabel('Sepal Width')
-plt.ylabel('Petal Width')
-plt.title('Scatter Plot: Sepal Width vs Petal Width')
-plt.savefig('sepal_width_vs_petal_width.png')
-plt.show()'''
-
-
-plt.scatter(iris['petal_length'], iris['petal_width'])
-plt.xlabel('Petal Length')
-plt.ylabel('Petal Width')
-plt.title('Scatter Plot: Petal Length vs Petal Width')
-plt.savefig('petal_length_vs_petal_width.png')
-plt.show()
+#Write the summary statistics to a text file
+with open('iris_summary.txt', 'w') as f:
+    f.write(summary_stats.to_string())
