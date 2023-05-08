@@ -14,13 +14,22 @@ Refactor the code to make it more modular and reusable'''
 
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
-# Load the iris dataset into a pandas dataframe
-iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
+# Load the iris dataset
+iris = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
 
-# Calculate summary statistics for each variable
-summary_stats = iris.describe()
+# Group the data by class and get the mean of each feature
+iris_mean = iris.groupby('class').mean()
 
-#Write the summary statistics to a text file
-with open('iris_summary.txt', 'w') as f:
-    f.write(summary_stats.to_string())
+# Create a bar chart of the mean feature values for each class
+iris_mean.plot(kind='bar')
+plt.title('Mean Feature Values for Each Iris Class')
+plt.xlabel('Class')
+plt.ylabel('Feature Value')
+
+# Save the bar chart as a PNG file
+plt.savefig('iris_bar_chart.png')
+
+# Display the bar chart
+plt.show()
