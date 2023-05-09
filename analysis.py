@@ -11,7 +11,7 @@ Color the scatter plots by class
 Create a function to generate scatter plots for any two variables and save them to png files
 Refactor the code to make it more modular and reusable'''
 
-import pandas as pd
+'''import pandas as pd
 
 # Load the iris dataset
 iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
@@ -28,4 +28,17 @@ def predict_species(sepal_length):
 iris['predicted_species'] = iris['sepal_length'].apply(predict_species)
 
 # Save the dataframe to a CSV file
-iris.to_csv('iris_predicted_species.csv', index=False)
+iris.to_csv('iris_predicted_species.csv', index=False)'''
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load the Iris dataset
+iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
+
+# Create a scatter plot matrix
+sns.pairplot(iris, hue='class')
+
+# Save the plot to a PNG file
+plt.savefig('scatter_plot_matrix.png')
