@@ -30,7 +30,7 @@ iris['predicted_species'] = iris['sepal_length'].apply(predict_species)
 # Save the dataframe to a CSV file
 iris.to_csv('iris_predicted_species.csv', index=False)'''
 
-import pandas as pd
+'''import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
@@ -41,4 +41,51 @@ iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width
 sns.pairplot(iris, hue='class')
 
 # Save the plot to a PNG file
-plt.savefig('scatter_plot_matrix.png')
+plt.savefig('scatter_plot_matrix.png')'''
+
+'''import pandas as pd
+
+# Load the Iris dataset
+iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
+
+# Calculate the mean values of each variable for each species
+mean_by_species = iris.groupby('class').mean()
+
+# Display the results
+print(mean_by_species)'''
+
+'''import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the Iris dataset
+iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
+
+# Calculate the mean values of each variable for each species
+mean_by_species = iris.groupby('class').mean()
+
+# Savethe table to a text file
+mean_by_species.to_csv('mean_by_species.txt', sep='\t')
+
+#Create a bar chart of the mean values by species
+mean_by_species.plot(kind='bar')
+plt.title('Mean Values by Species')
+plt.xlabel('Species')
+plt.ylabel('Mean Value')
+plt.savefig('mean_by_species.png')
+
+# Sho the table and chart below 
+print(mean_by_species)
+plt.show()'''
+
+import seaborn as sns
+import pandas as pd
+
+# Load the Iris dataset
+iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
+
+# Create a box plot for each variable, with the classes on the x-axis and the variable values on the y-axis,
+# and save each plot to a PNG file
+sns.boxplot(x='class', y='sepal_length', data=iris).figure.savefig('sepal_length_boxplot.png')
+sns.boxplot(x='class', y='sepal_width', data=iris).figure.savefig('sepal_width_boxplot.png')
+sns.boxplot(x='class', y='petal_length', data=iris).figure.savefig('petal_length_boxplot.png')
+sns.boxplot(x='class', y='petal_width', data=iris).figure.savefig('petal_width_boxplot.png')
