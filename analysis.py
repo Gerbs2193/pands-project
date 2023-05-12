@@ -124,9 +124,16 @@ var_descriptions = iris.describe()
 with open('variable_descriptions.txt', 'w') as f:
     f.write(str(var_descriptions))
 
-#Load the Iris dataset into a pandas dataframe
+import pandas as pd
+import seaborn as sns
+
 iris = pd.read_csv('iris.data', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
-#Calculate the correlation coefficients
 correlation = iris.iloc[:, :-1].corr()
-#Write the correlation coefficients to a text file
-correlation.to_csv('correlation_coefficients.txt', sep='\t')
+
+# Create a correlation heatmap using seaborn
+sns.heatmap(correlation, cmap='coolwarm', annot=True, fmt=".2f", cbar=False)
+
+# Save the plot as a PNG image
+plt.savefig('correlation_coefficients.png', dpi=300)
+
+

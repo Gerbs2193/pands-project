@@ -149,23 +149,75 @@ max        7.900000     4.400000      6.900000     2.500000
 
 ### Correlation Coefficient:
 
-The correlation coefficient tells me how closely related the length and width of the petalsare. It helps to understand if there is a strong or weak relationship between these two variables. i find that the petal length and width have a strng positive correlation of approximately 0.96, showin that they tend to change together. As the petal length increases the petal width also increases too
+The correlation coefficient below shows how closely or not two variables are related to each other. It also measures the strength and direction of the relationship. Below are the completed results:
 
-Scatter Plot Matrix:
+Sepal Length vs. Sepal Width: 0.682
+Sepal Length vs. Petal Length: 0.864
+Sepal Length vs. Petal Width: 0.837
+Sepal Width vs. Petal Length: -0.366
+Sepal Width vs. Petal Width: -0.249
+Petal Length vs. Petal Width: 0.960
 
-The scatter plot matrix allows me to see all possible combinations of the variables in one place. i can visually explore the relationships between the sizes of the different parts of the Iris flowers. This helps to identify any trends or clusters within the data.
+Overall then, the correlation coefficient seems to range from -0.366 to .960. When the coefficient is close to 1, it means there is a strong positive relationship between the variables. When it's close to -1, it means there is a strong negative relationship. If the coefficient is close to 0, it means there is little to no relationship between the variables. Source for understanding and code implementation - https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/ and https://realpython.com/numpy-scipy-pandas-correlation-python/, https://seaborn.pydata.org/generated/seaborn.heatmap.html - specifically on how to use seaborn's heatmap function to get the heatmap as I don't know how to code it myself. 
 
-Iris Class Prediction based on Petal Length:
+From the correlation coefficients the following highlights can be seen given, again, that 1 indicates a strong positive relationship, 0 indicates there is little relationship between the vars and -1 indicates a strong negative relationship:
 
-i can make a prediction about the type of Iris flower by looking at the length of its petals. If the petal length is less than 2.5 cm, it is likely to be Iris-setosa. If the petal length falls between 2.5 cm and 4.9 cm, it is probably Iris-versicolor. And if the petal length exceeds 4.9 cm, it is likely to be Iris-virginica. This simple rule helps us clssify Iris flowers based on a single attribut.
+- Sepal Length looks to have a strong positive relationship with Petal Length (0.864) and Petal Width (0.837). From this, I can safely say that as Sepal Length increases, the other two variables should also increase.
 
-Mean Bar Chart of Classes:
+- Sepal Width conversely, looks to have a weak negative relationship with Petal Length (-0.366) and Petal Width (-0.249). This means that as Sepal Width increases, the other two variables will also.
 
-The bar chart shows the average sizes of the petals and sepals for each type of Iris flower.ican compare the sizes of the different parts across the flower classes. Iris-setosa generally has the smallest average sizes, Iris-virginica has the largest, and Iris-versicolor falls in between. This information helps to understand the typical characteristics of each flower class.
+- Petal Length and Petal Width have a very strong positive relationship of 0.960 - by far the highest of any var relationship. This, then, means that as Petal Length increases Petal Width will also increase. 
 
-By examining the different visualizations and summary measures, i gain insights into the sizes, relationships, and classification of the Iris flowers.
-##
-Conclusion
+These correlation coefficients give good insights into how the variables are related to each other in the dataset. The full heatmap is available in the correlation_coefficient.png. 
+
+
+### Scatter Plot Matrix:
+
+Next I performed a scatter plot matrix. This was chosen as an additional way to do some exploratory analysis between the relationship between the variables and the three classes. It shows several scatter plots that compare pairs of variables, though I'm not sure it's very well laid out. 
+
+#### Sepal Length vs. Sepal Width:
+This plot compares the length and width of the leaf-like part of the flower. It doesn't seem to show a clear pattern or relationship between them that I could discern.
+
+#### Sepal Length vs. Petal Length:
+For sepal length v petal length, it can be seen that as the sepal gets longer, the petal does likewise - clearly showcasing a strong relationship.
+
+#### Sepal Length vs. Petal Width:
+Next, in this plot, I noted that as sepal gets lengthier, the petal width follows suit. This, again, showcases a strong relationship between both variables.
+
+#### Sepal Width vs. Petal Length:
+For sepal width v petal length - there doesn't appear to be a clear pattern or relationship between the two.
+
+#### Sepal Width vs. Petal Width:
+Next, here, I note that as the sepal gets wider, the petal width variable follows suit which, you guessed it - indicates a strong relationship. 
+
+#### Petal Length vs. Petal Width:
+Finally, this plot compares petal length with the petal width. It shows that as the length of the petal increases, its width also tends to increase - highlighting it's strong relationship.
+
+Also, my scatter plot matrix includes the 3 classes. The inclusion of the classes helps to visualize how the variables relate to the classes and if there are any interesting patterns between the classes based on the variables. For example - based on the scatter plot matrix generated, there are some patterns and differences visible between the 3 classes. As each of the classes has its own group of dots on the plots - It means that its easy and somewhat intuitive to see how the variables can show the different types of iris classes apart.
+
+For instance - In the scatter plot matrix, its visible that some dots for one type of iris flower are far away from the dots of other types. For example - sepal length - the dots for its Iris-setosa flowers are, for the most part, at the bottom whereas the dots for the other types are much higher up. This can be useful as sepal length can help us tell Iris-setosa flowers apart from the others, merely by looking at the matrix. 
+
+To add more results, there are plot points where the dots for two types of classes overlap somewhat, but the differences are still visible. Specifically, petal width shows that although the dots for Iris-versicolor and Iris-virginica are mixed together - Iris-versicolor for the most part, has smaller petal widths compared to Iris-virginica. This can be a helpful nudge to distinguish between these two.
+
+So, the scatter plot matrix gives a visual way to understand how the different measurements relate to each other and how they can be useful in recognizing the different types of iris classes, as noted above. 
+
+
+### Mean Bar Chart of Classes:
+This was done to perform an additional fairly straight-forward exploratory of the relationship between the classes and the variables.
+
+#### Iris-setosa:
+For the setosa, on average - sepal length is approximately 5.0 cm, sepal width is approximately 3.4 cm, petal length is approximately 1.5 cm, and lastly, petal width is about 0.2 cm.
+
+#### Iris-versicolour:
+For the iris-versicolour, on average, sepal length is about 5.9 cm, sepal width is about 2.8 cm, petal length is about 4.3 cm while, lastly, petal width is about 1.3 cm.
+
+#### Iris-virginica:
+Laslty for the virginica, on average sepal length is around 6.6 cm, sepal width is 3.0 cm, petal length is 5.6 cm and petal width is 2.0 cm.
+
+These average values give us an idea of the typical sizes of the different variables in each class.
+
+
+## Conclusion
 
 ##
 How to
@@ -183,6 +235,8 @@ https://seaborn.pydata.org/examples/scatterplot_matrix.html
 https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
 https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html
 https://www.kaggle.com/datasets/vikrishnan/iris-dataset
+https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/
+https://realpython.com/numpy-scipy-pandas-correlation-python/
 ===                         
 
 
