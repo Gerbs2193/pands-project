@@ -1,12 +1,14 @@
 # Data analysis of the Iris-data set 
 
 ## Table of contents
-- [Whatisit](#whatisit)
+- [What-is-it](#what-is-it)
 - [Introduction](#introduction)
-- [TargetAudience](#targetaudience)
+- [Target-Audience](#target-audience)
 - [Research](#research)
 - [Importance](#importance)
-## Whatisit
+- [Scope](#scope)
+- [Conclusion-of-intro](#conclusion-of-intro)
+## What-is-it
 
 The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis.[1] It is sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species.[2] Two of the three species were collected in the Gaspé Peninsula "all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus".[3]
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other - www.kaggle.com. (n.d.). Iris Dataset. [online] Available at: https://www.kaggle.com/datasets/vikrishnan/iris-dataset. That is the definition from kaggle - however I will detail my understanding of it below.
@@ -30,7 +32,7 @@ This Iris Dataset Analysis project attempts to explore and gain insights into th
 The primary objective of this project is to analyse the dataset using statistical and data visualization techniques, without relying on complex machine learning algorithms. By leveraging the power of Python programming language and popular libraries like Pandas, Matplotlib, and Seaborn - I aim to uncover patterns and insights within the dataset in a beginner-friendly manner.
 
 
-## TargetAudience
+## Target-Audience
 
 Who is this project aimed at? Well, this project is tailored for beginners like myself who are keen to understand the Iris dataset and learn how to perform mostly basic exploratory data analysis and visualizations using python. It provides a foundational understanding of statistical methods and data visualization techniques, which are essential skills in the data analysis of the Iris dataset.
 
@@ -43,7 +45,7 @@ Myriad other research projects on the Iris dataset have used advanced machine le
 
 By performing exploratory data analysis and visualization techniques, this project highlights the importance of foundational statistical methods and visual exploration in understanding the dataset. Through this approach - valuable insights can be gained into the relationships between the attributes of Iris flowers and their species, without relying on advanced machine learning algorithms. This project showcases the power of descriptive statistics and data visualization in uncovering valuable information and patterns within a dataset.
 
-## Scope of data analysis
+## Scope
 
 To focus on exploratory data analysis techniques and visualizations rather than advanced machine learning algorithms. The emphasis is on understanding the structure, patterns and relationships within the Iris dataset. By analysing attribute distributions and relationships, I aim to answer questions about attribute differences between species, correlations among measurements, visual distinguishability and insights into Iris flowers' characteristics. To achieve this, the following will be utilized; 
 - 6 complete scatter plots of all the variables comparisons aka; Sepal Width v Petal Width, Sepal Width v Petal Length, Sepal Length v Sepal Width, Sepal Length v Petal Width, Sepal Length v Petal Length and Petal Length v Petal Width. 
@@ -57,7 +59,7 @@ To focus on exploratory data analysis techniques and visualizations rather than 
 
 
 
-## Conclusion of introduction
+## Conclusion-of-intro
 
  This Iris Dataset Analysis project offers a beginner-friendly approach to understanding the Iris dataset. By leveraging statistical analysis techniques and data visualizations - I aim to uncover patterns and insights within the dataset. The focus is on exploring the relationships between attributes and species which, in turn - provides valuable insights into the classification and characteristics of Iris flowers.
 
