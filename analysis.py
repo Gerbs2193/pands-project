@@ -1,3 +1,8 @@
+# Gerard Ball
+# analysis.py
+# py exploratory project that analyses the Iris dataset
+
+
 """ what to do/check list
 
 Load the Iris dataset into a pandas dataframe and display the first few rows/then all
