@@ -31,7 +31,7 @@ The data set consists of 50 samples from each of three species of Iris (Iris set
 
 The Iris flower dataset is a collection of measurements on three types of flowers: setosa, versicolor, and virginica. It was created to understand the differences between these flowers based on their physical characteristics.
 
-The dataset contains 150 samples, with each flower type having 50 samples. Four variables were exist for each: sepal length, sepal width, petal length and, lastly, petal width.
+The dataset contains 150 samples, with each flower type having 50 samples. Four variables exist for each: sepal length, sepal width, petal length and, lastly, petal width.
 
 The goal of the dataset is to classify the flowers into their respective types using the above variables. In this project, I use simple plots and calculations to explore the relationships between the measurements and gain insights about the flowers.
 
@@ -45,7 +45,7 @@ Overall, the Iris dataset provides an opportunity to learn about data analysis a
 
 This Iris Dataset Analysis project attempts to explore and gain insights into the relationships between various attributes of Iris flowers. The dataset consists of measurements of sepal length, sepal width, petal length, and petal width for 150 Iris flowers. Along with the attribute measurements, each flower is classified into one of three species: setosa, versicolor, or virginica.
 
-The primary objective of this project is to analyse the dataset using statistical and data visualization techniques, without relying on complex machine learning algorithms. By leveraging the power of Python programming language and popular libraries like Pandas, Matplotlib, and Seaborn - I aim to uncover patterns and insights within the dataset in a beginner-friendly manner.
+The primary objective of this project is to analyse the dataset using statistical and data visualization techniques, without relying on complex machine learning algorithms. By leveraging the power of Python programming language and popular libraries like Pandas, Matplotlib and Seaborn - I aim to uncover patterns and insights within the dataset in a beginner-friendly manner.
 
 
 ## Target-Audience
@@ -55,11 +55,11 @@ Who is this project aimed at? Well, this project is tailored for beginners like 
 
 ## Research
 
-Myriad other research projects on the Iris dataset have used advanced machine learning techniques for classification and prediction of the dataset. For example; https://github.com/jennifer-ryan/iris-data-set-project - this excellent and far superior project by Jennifer Ryan on Github details how to use the KNN algorithm for further training analysis. However, this project takes a different approach by focusing solely on exploratory data analysis techniques and visualizations. By using histograms, scatter plots, bar charts, correlation coefficients and summary statistics, we can discover meaningful relationships and patterns within the dataset whilst contributing to our understanding of the Iris flowers' characteristics.
+Myriad other research projects on the Iris dataset have used advanced machine learning techniques for classification and prediction of the dataset. For example; https://github.com/jennifer-ryan/iris-data-set-project - this excellent and far superior project by Jennifer Ryan on Github details how to use the KNN algorithm for further training analysis. However, this project takes a different approach by focusing solely on exploratory data analysis techniques and visualizations. By using histograms, scatter plots, bar charts, correlation coefficients and summary statistics, I can discover meaningful relationships and patterns within the dataset whilst contributing to the understanding of the Iris flowers' characteristics.
 
 ## Importance
 
-By performing exploratory data analysis and visualization techniques, this project highlights the importance of foundational statistical methods and visual exploration in understanding the dataset. Through this approach - valuable insights can be gained into the relationships between the attributes of Iris flowers and their species, without relying on advanced machine learning algorithms. This project showcases the power of descriptive statistics and data visualization in uncovering valuable information and patterns within a dataset.
+By performing exploratory data analysis and visualization techniques, this project highlights the importance of foundational statistical methods and visual exploration in understanding the dataset. Through this approach - valuable insights can be gained into the relationships between the attributes of Iris flowers and their species, without relying on machine learning. This project showcases the power of descriptive statistics and data visualization in uncovering valuable information and patterns within a dataset.
 
 ## Scope
 
@@ -71,7 +71,7 @@ To focus on exploratory data analysis techniques and visualizations rather than 
 - 1 variable descriptions txt file outlining the summary of the variables
 - 1 iris class prediction based on its petal length
 - 1 mean bar chart of classes
-- 1 correlation coefficient of the variales++++
+- 1 correlation coefficient of the variables
 
 
 
@@ -83,10 +83,10 @@ To focus on exploratory data analysis techniques and visualizations rather than 
 
 ### Histograms-of-the-variables:
 
-The histograms I generated provide an easy visualisation of the distribution of the variables. Here, it shows how often certain sizes appear in the dataset. By looking at the shape of the histograms it becomes possible to see the patterns and characteristics. Looking at the bell-shaped distribution for sepal length and width, for example - seems to show that most of the flowers have similar sizes in these dimensions. On the other hand though, the two peaks in the histograms of petal length and width shows the existence of distinct groups or clusters within the dataset. This - to me - means that some flowers have shorter and narrower petals, while others have longer and wider ones. Also, just by looking closely at the hists you can gain some valuable insights into the range and variation of sizes in different attributes of the Iris flowers. For example; Size range, shape and distribution, outliers to name but three. For the range of sizes - sepal length ranges from about 4.3 to 7.9 centimeters whereas petal width ranges from around 0.1 to 2.5 centimeters. Just by understanding and noting these ranges, it becomes possible us more easily grasp the diversity and variability of the Iris flowers' attributes.
+The histograms I generated provide an easy visualisation of the distribution of the variables. Here, it shows how often certain sizes appear in the dataset. By looking at the shape of the histograms it becomes possible to see the patterns and characteristics. Looking at the bell-shaped distribution for sepal length and width, for example - seems to show that most of the flowers have similar sizes in these dimensions. On the other hand though, the two peaks in the histograms of petal length and width shows the existence of distinct groups or clusters within the dataset. This - to me - means that some flowers have shorter and narrower petals, while others have longer and wider ones. Also, just by looking closely at the hists you can gain some valuable insights into the range and variation of sizes in different attributes of the Iris flowers. For example; Size range, shape and distribution, outliers to name but three. For the range of sizes - sepal length ranges from about 4.3 to 7.9 centimeters whereas petal width ranges from around 0.1 to 2.5 centimeters. Just by understanding and noting these ranges, it becomes possible to more easily grasp the diversity and variability of the Iris flowers' attributes.
 ### Sources used to achieve the histograms
 - https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/. This showed me how to format the code for each variable, what the output should look like. What I wanted to do was change it to output to a single text file, rather than 4 separate ones. It was also excellent for reading up on the summary variable descriptions - which I used it for and the box plots - which I didn't understand how to get to work so I didn't care to include it.
-- https://www.nickmccullum.com/python-visualization/histogram/ - I was mostly familair with how to create histograms from the plot.py tank but regardless, used this source to go over it again. 
+- https://www.nickmccullum.com/python-visualization/histogram/ - I was mostly familiar with how to create histograms from the plot.py tank but regardless, used this source to go over it again. 
 
 
 ### Scatter plots of variable comparisons:
@@ -94,10 +94,10 @@ The histograms I generated provide an easy visualisation of the distribution of 
 The 6 variable comparison scatter plots are good for visualisations of the iris dataset as they can show how the sizes of different parts of the Iris flowers are related to each other. Specifically, the results for each comparison is below:
 
 #### Sepal Width vs. Petal Width:
-Comparing the width of the sepal (the leaf-like part) to the width of the petal (the colourful part), you can see that as the sepal gets wider, the petal tends to get wider too. This suggests that there is a connection between the width of these two parts as when one increases in width - so does the other. 
+Comparing the width of the sepal (the leaf-like part) to the width of the petal (the colourful part), you can see that as the sepal gets wider, the petal does also. This suggests that there is a connection between the width of these two parts as when one increases in width - so does the other. 
 
 #### Sepal Width vs. Petal Length:
-Comparing the width of the sepal to the length of the petal, you can see something different than above. It appears that as the sepal gets wider, the petal tends to get longer. This comparison shows that while a relationship exists between the two, it differs strongly to the first comparison - as you'd expect.
+Comparing the width of the sepal to the length of the petal, you can see something different than above. It appears that as the sepal gets wider, the petal gets longer. This comparison shows that while a relationship exists between the two, it differs strongly to the first comparison - as you'd expect.
 
 #### Sepal Length vs. Sepal Width:
 Comparing the length of the sepal and its width it doesn't appear to show any pattern or relationship between them. They seem to be independent of each other as knowing the sepal's length doesn't mean you can discern well its width. From a data analysis point of view, this comparison doesn't really show anything valuable. 
@@ -109,7 +109,7 @@ Comparing the length of the sepal to the width of the petal there is a connectio
 Comparing the length of the sepal and the length of the petal, there is a connection between the two. As the sepal gets longer - the petal also gets longer. Again, knowing this relationship means you can at least guess the behaviour of one variable, when knowing the other. 
 
 #### Petal Length vs. Petal Width:
-Lastly, comparing petal length to its width, there appears to be a connaction also. Looking at the petal -  as it gets longer the width tends to increase too. This shows us that there is a relationship between the length and width of the petal.
+Lastly, comparing petal length to its width, there appears to be a connection also. Looking at the petal - as it gets longer the width tends to increase too. This shows us that there is a relationship between the length and width of the petal.
 ### Sources used to achieve the scatter plot variable comparisons
 - https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/ - Great source that shows how to code single scatter plot for each variable - also shows advantages for certain libraries like seaborn over lesser ones. It didn't show me how to compare them though but eventually I found a way using nested loops: 
 - https://stackoverflow.com/questions/62541229/how-to-nest-a-for-loop-to-subplot-a-scatter-on-iris-data used this for example of half similar implementation and used this for what nested loops are and how to do them: 
@@ -119,11 +119,11 @@ Lastly, comparing petal length to its width, there appears to be a connaction al
 
 ### Violin-plots:
 
-The 4 violin plots  were generated as I wanted another way to showcase the relationship between the variables and the classes. I chose violin plot as I couldn't get box plots to work properly and violin plots seemed to work better regardless. 
+The 4 violin plots were generated as I wanted another way to showcase the relationship between the variables and the classes. I chose violin plot as I couldn't get box plots to work properly and violin plots seemed to work better regardless, whilst also looking better. 
 
 #### Iris-setosa:
 ##### Sepal Length: 
-The sepal length of the iris class of setosa semes to mostly fall between 4.8 - 5.4. It does range, however, from about 4 - 6.2 approximately its just predominately between 4.8-5.4 as mentioned. The absolute data peak is approximately 5 - this indicates where the absolute highest density of data points reside. Overall, not too much variation.
+The sepal length of the iris class of setosa semes to mostly fall between 4.8 - 5.4. It does range, however, from about 4 - 6.2. The absolute data peak is approximately 5 - this indicates where the absolute highest density of data points reside. Overall, not too much variation.
 
 ##### Sepal Width: 
 For the sepal width  of the iris setosa, the violin plot shows the flowers mostly between 3.3 - 3.6. The range is from approximately 2-5. The absolute peak seems to be 3.3. Little bit more variation than sepal length. 
@@ -140,7 +140,7 @@ The petal width of the setosa shows a predominance between 0.2-0.3. The range is
 The data here falls mostly between 5.5 to 6.7 for the sepal length of the versicolour. There is a peak around 6.0, indicating a common size among the flowers. The range is approximately 4.5-7.5.
 
 ##### Sepal Width: 
-The sizes of the sepal width for Iris-versicolor are most concentrated around 2.7 to 3.1. The overall 0.8-3.75 with the absolute peak being around 3. The range shows a slightly wider shape - which suggests some variation in sizes.
+The sizes of the sepal width for Iris-versicolor are most concentrated around 2.7 to 3.1. The overall range is 0.8-3.75 with the absolute peak being around 3. The range shows a slightly wider shape - which suggests some variation in sizes.
 
 ##### Petal Length: 
 The sizes of the petal length for Iris-versicolor are mostly distributed between 3.7 and 4.7. The range is around 2.8-5.7 with an absolute peak of 4.7. This plot, like sepal width before it, shows a fairly wide shape, indicating more noticeable variation in sizes.
@@ -153,7 +153,7 @@ The petal width of the versicolour are mostly around the 1.0 to 1.3 datapoints. 
 The data here concentrates mostly between 6.0 to 7.9. The range is 4.5-8.5 and the absolute peak is 6.5. 
 
 #### Sepal Width: 
-Data concentates between 2.8 to 3.2. The range is approximately 2-4 and the absolute peal data point is around 3. The plot here shows a wider shape which suggests there are some solid size variations happening.
+Data concentrates between 2.8 to 3.2. The range is approximately 2-4 and the absolute peak data point is around 3. The plot here shows a wider shape which suggests there are some solid size variations happening.
 
 #### Petal Length: 
 Petal length is predominantly around the data points of 4.5 and 6.9. The range is between 4 and 7.2, roughly. The peak data point is 5.5. This plot also shows a wider shape, indicating some noticeable variation in sizes.
@@ -161,7 +161,7 @@ Petal length is predominantly around the data points of 4.5 and 6.9. The range i
 #### Petal Width: 
 This is a small data point with about 1.6 to 2.0 representing the most common values. The range is 1.25-2.75 and the maximum value point is 1.9. The plot shows a much more narrow shape, just like the petal width of the other two classes setosa and versicolour which, again, suggests less variation in sizes.
 
-So, to summarise the above violin plots; The plots allowed me to visualise and greater understand how the variables of the Iris flowers vary across the iris classes - setosa, versicolour and virginica. I could observe the ranges, common sizes, the absolute max data points and the degree of variation in sizes for each class. To add to this, the violin plots give me a clearer illustration of the range of sizes for all the variables of the Iris flowers within each of the classes. Also, having access to these plots - it's easy to compare the shapes and spreads of the plots to understand the differences. For example - the Iris-setosa seems to have smaller petals and sepals compared to both Iris-versicolor and Iris-virginica whereas Iris-virginica tends to have longer sepals compared to the other two classes. Simple insight that wasn't possible until seeing the data as it was presented to me in the plots. 
+So, to summarise the above violin plots; The plots allowed me to visualise and greater understand how the variables of the Iris flowers vary across the iris classes - setosa, versicolour and virginica. I could observe the ranges, common sizes, the absolute max data points and the degree of variation in sizes for each class. To add to this, the violin plots gave me a clearer illustration of the range of sizes for all the variables of the Iris flowers within each of the classes. Also, having access to these plots - it's easy to compare the shapes and spreads of the plots to understand the differences. For example - the Iris-setosa seems to have smaller petals and sepals compared to both Iris-versicolor and Iris-virginica whereas Iris-virginica tends to have longer sepals compared to the other two classes. Simple insight that wasn't possible until seeing the data as it was presented to me in the plots. 
 ### Sources needed to be able to achieve this:
 - https://www.geeksforgeeks.org/violin-plot-for-data-analysis/ - I wouldn't have been able to achieve the violin's without seeing an implementation elsewhere. This example codes most of it and I liked the unique visualisations so I took heavy inspiration from it. I had never seen violin plots before seeing this source. 
 - https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.violinplot.html - Looked through this to see why it would be nice to use a violin plot aka unique visualisation among different classes and the vars
@@ -217,7 +217,7 @@ These correlation coefficients give good insights into how the variables are rel
 
 ### Scatter-plot-matrix:
 
-Next I performed a scatter plot matrix. This was chosen as an additional way to do some exploratory analysis between the relationship between the variables and the three classes. It shows several scatter plots that compare pairs of variables, though I'm not sure it's very well laid out. 
+Next I performed a scatter plot matrix. This was chosen as an additional way to do some exploratory analysis between the relationship between the variables and the three classes. It shows several scatter plots that compares pairs of variables, though I'm not sure it's very well laid out. 
 
 #### Sepal Length vs. Sepal Width:
 This plot compares the length and width of the leaf-like part of the flower. It doesn't seem to show a clear pattern or relationship between them that I could discern.
@@ -268,7 +268,7 @@ These average values give some idea of the sizes of the different variables in e
 
 For this, I wanted to try a very basic and limited sort of machine learning alternative code that predicts the iris class based on the sepal length of the flower. The code takes the sepal length as input and uses a prediction of the iris class.
 
-Specifically, If sepal length is less than 5.84, the predicted iris class is "Iris-setosa". 5.84 was chosen because both the other two classes have, generally, overwhelmingly larger sepal lengths. Next, If the sepal length is between 5.84 and 6.62 then predicted iris class is Iris-versicolor as its sepal length usually falls in this range. Lastly, everything larger than this aka sepal lengths that are greater than or equal to 6.62 - then predicted iris class is "Iris-virginica". It's simple, easy to enough to code but very limited. 
+Specifically, If sepal length is less than 5.84, the predicted iris class is "Iris-setosa". 5.84 was chosen because both the other two classes have, generally, overwhelmingly larger sepal lengths. Next, If the sepal length is between 5.84 and 6.62 then predicted iris class is Iris-versicolor as its sepal length usually falls in this range. Lastly, everything larger than this aka sepal lengths that are greater than or equal to 6.62 - then predicted iris class is "Iris-virginica". It's simple, easy enough code but very very limited. 
 
 So, by using this code, I can determine the iris class based on the sepal length alone. It offers a straightforward approach for making predictions without the need for complex calculations or using machine learning - though at the cost of precision.
 ### Sources needed for predicting class based off of sepal length
@@ -276,27 +276,27 @@ This one was I guess unsurprisingly not that hard as its very silly and limited.
 
 ## Conclusion
 
-To conclude - throughout this analysis, my mission was to, essentially, not bite off more than I could chew. Simply, I wanted to satisfy the parameters for the brief whilst also looking to explore and understand as much of the Iris dataset as possible. I wanted to examone the variables, plot them in all manner of ways to get some insights and more importantly, see how the relationship compares between them and their classes. These variables called sepal length, sepal width, petal length, and petal width were compared with the three different types of iris classes - namely - Iris-setosa, Iris-versicolor and Iris-virginica.
+To conclude - throughout this analysis, my mission was to, essentially, not bite off more than I could chew. Simply, I wanted to satisfy the parameters for the brief whilst also looking to explore and understand as much of the Iris dataset as possible. I wanted to examine the variables, plot them in all manner of ways to get some insights and more importantly, see how the relationship compares between them and their classes. These variables called sepal length, sepal width, petal length, and petal width were compared with the three different types of iris classes - namely - Iris-setosa, Iris-versicolor and Iris-virginica.
 
 To start - I began by visualizing the distribution of each variable using histograms which provided me with the range and frequency of values for all 4 variables shown across 4 histograms.
 
-Following that, I began looking into the the relationships between each variable through 6 scatter plots. These plots allowed me to observe patterns and correlations between different parts of the variables - shedding somee light on their interdependencies or otherwise.
+Following that, I began looking into the the relationships between each variable through 6 scatter plots. These plots allowed me to observe patterns and correlations between different parts of the variables - shedding some light on their interdependencies or otherwise.
 
 Next I needed to be more proactive regarding the actual classes so I utilized 4 separate violin plots, which showed the distribution and variation of each variable size within each class. These plots offered valuable insights into the unique features and differences among the three iris species.
 
-The scatter plot matrix was generated the as it, again, allowed me to oversee more of the relationship between the variables and the classes by enabling me to clearly see patterns, separations and overlaps between each class. This visual representation, whilst a great resource - was more confusing that anything but it did show how the variables contribute to the classification of iris flowers.
+The scatter plot matrix was generated then as it, again, allowed me to oversee more of the relationship between the variables and the classes by enabling me to clearly see patterns, separations and overlaps between each class. This visual representation, whilst a great resource - was more confusing than anything but it did show how the variables contribute to the classification of iris flowers.
 
-A text file - which summarizing the descriptive statistics for each variable - was also generated. This single textfile summary provided a succinct, in-depth and quantitative overview of the dataset which showcased the numerical characteristics of the iris measurements in an easy to see way. 
+A text file - which summarizes the descriptive statistics for each variable - was also generated. This single textfile summary provided a succinct, in-depth and quantitative overview of the dataset which showcased the numerical characteristics of the iris measurements in an easy to see way. 
 
 Calculating the correlation coefficient was one of the final things to code and was useful as it showed the strength and direction of the relationships between pairs of variables.
 
 I also visualized the mean feature values for each iris class using a bar chart - the only bar chart I used. This visual highlighted the average differences in variable values among the three classes which gave an insight into the characteristics of each iris species.
 
-Lastly, I wrote a pretty basica code that predicted the iris class based on the sepal length. This predictive capability allowed me to assign a predicted species to a given sepal length - which offered a practical application of the analysis and a simple alternative to machine learning.
+Lastly, I wrote a pretty basic code that predicted the iris class based on the sepal length. This predictive capability allowed me to assign a predicted species to a given sepal length - which offered a practical application of the analysis and a simple alternative to machine learning.
 
 Many failed attempts at box plotting and KNN machine learning went by the way side and were, obviously, not included.
 
-By undertaking these analyses and visualization techniques - I hope I have accomplished my mission of exploring and comprehending the Iris dataset by unraveling its relationships, patterns, and unique traits among the different types of iris flowers.
+By undertaking these analysis and visualization techniques - I hope I have accomplished my mission of exploring and comprehending the Iris dataset by unravelling its relationships, patterns and unique traits among the different types of iris flowers.
 
 
 ## How-to-intro
@@ -304,7 +304,7 @@ The goal here is to provide instructions on how to replicate the analysis and vi
 
 ### Data-prep:
 - Download the Iris dataset or import it from a specific source. I imported it and saved it as iris.data and used this when manipulating its data afterwards.
-- Ensure that the required python libraries like Pandas, NumPy, Matplotlib, and Seaborn are installed. If not, install what libraries you may need depending on your project specifics. For me, the aforementioned were used. 
+- Ensure that the required python libraries like Pandas, NumPy, Matplotlib and Seaborn are installed. If not, install what libraries you may need depending on your project specifics. For me, the aforementioned were used. 
 - Import the necessary modules and load the dataset into your Python environment.
 -Histograms:
 Use Matplotlib library to create the 4 hists variables.
