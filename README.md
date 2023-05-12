@@ -11,7 +11,7 @@ The dataset contains 150 samples, with each flower type having 50 samples. Four 
 
 The goal of the dataset is to classify the flowers into their respective types using the above variables. In this project, I use simple plots and calculations to explore the relationships between the measurements and gain insights about the flowers.
 
-By examining histograms, scatter plots, bar charts, violin plots, and correlation coefficients - it becomes possbile to identify patterns and understand how the measurements relate to each other. This project focuses on analysing the dataset without advanced machine learning techniques, making it accessible to beginners.
+By examining histograms, scatter plots, bar charts, violin plots and correlation coefficients - it becomes possible to identify patterns and understand how the measurements relate to each other. This project focuses on analysing the dataset without advanced machine learning techniques which - I found - makes it more accessible to beginners.
 
 Overall, the Iris dataset provides an opportunity to learn about data analysis and visualization by exploring the relationships between the flower measurements and their types.
 
@@ -128,31 +128,42 @@ Petal length is predominantly around the data points of 4.5 and 6.9. The range i
 #### Petal Width: 
 This is a small data point with about 1.6 to 2.0 representing the most common values. The range is 1.25-2.75 and the maximum value point is 1.9. The plot shows a much more narrow shape, just like the petal width of the other two classes setosa and versicolour which, again, suggests less variation in sizes.
 
-These violin plots give us an understanding of how the sizes of the different parts of the Iris flowers vary across the iris classes. We can observe the ranges, common sizes, and the degree of variation in sizes for each class.
+So, to summarise the above violin plots; The plots allowed me to visualise and greater understand how the variables of the Iris flowers vary across the iris classes - setosa, versicolour and virginica. I could observe the ranges, common sizes, the absolute max data points and the degree of variation in sizes for each class. To add to this, the violin plots give me a clearer illustration of the range of sizes for all the variables of the Iris flowers within each of the classes. Also, having access to these plots - it's easy to compare the shapes and spreads of the plots to understand the differences. For example - the Iris-setosa seems to have smaller petals and sepals compared to both Iris-versicolor and Iris-virginica whereas Iris-virginica tends to have longer sepals compared to the other two classes. Simple insight that wasn't possible until seeing the data as it was presented to me in the plots. 
 
-The violin plots give us a clearer picture of the range of sizes for the different parts of the Iris flowers within each flower class. We can compare the shapes and spreads of the plots to understand the differences. For instance, Iris-setosa generally has smaller petals and sepals compared to Iris-versicolor and Iris-virginica. Iris-virginica, on the other hand, tends to have longer sepals compared to the other two classes.
 
-Summary Description of Variables:
+### Summary Description of Variables:
 
-The summary description provides us with some key numbers about the sizes of the petals and sepals. We can look at the average sizes and see how much they vary. On average, the sepal length is around 5.84 cm, the sepal width is approximately 3.05 cm, the petal length is about 3.76 cm, and the petal width is roughly 1.20 cm. These numbers give us a general idea of the typical sizes of the different parts.
+The variable summary description shows some useful numbers and data about the sizes of the 4 variables. They show the count, mean, standard deviation, min, 25%, 50%, 75% and max data point. By coding this, it makes it easy to see - for example - average sizes and how much they may vary. An example being that, on average, sepal length is around 5.84 cm, the sepal width is approximately 3.05 cm, the petal length is around 3.76cm whereas petal width is around 1.20 cm. This fairly simple data give us a general idea of the typical sizes of the different parts.
 
-Correlation Coefficient:
+#### The full results;
 
-The correlation coefficient tells us how closely related the length and width of the petals are. It helps us understand if there is a strong or weak relationship between these two variables. We find that the petal length and width have a strong positive correlation of approximately 0.96, indicating that they tend to change together. As the petal length increases, the petal width also increases.
+sepal_length  sepal_width  petal_length  petal_width
+count    150.000000   150.000000    150.000000   150.000000
+mean       5.843333     3.054000      3.758667     1.198667
+std        0.828066     0.433594      1.764420     0.763161
+min        4.300000     2.000000      1.000000     0.100000
+25%        5.100000     2.800000      1.600000     0.300000
+50%        5.800000     3.000000      4.350000     1.300000
+75%        6.400000     3.300000      5.100000     1.800000
+max        7.900000     4.400000      6.900000     2.500000
+
+### Correlation Coefficient:
+
+The correlation coefficient tells me how closely related the length and width of the petalsare. It helps to understand if there is a strong or weak relationship between these two variables. i find that the petal length and width have a strng positive correlation of approximately 0.96, showin that they tend to change together. As the petal length increases the petal width also increases too
 
 Scatter Plot Matrix:
 
-The scatter plot matrix allows us to see all possible combinations of the variables in one place. We can visually explore the relationships between the sizes of the different parts of the Iris flowers. This helps us identify any trends or clusters within the data.
+The scatter plot matrix allows me to see all possible combinations of the variables in one place. i can visually explore the relationships between the sizes of the different parts of the Iris flowers. This helps to identify any trends or clusters within the data.
 
 Iris Class Prediction based on Petal Length:
 
-We can make a prediction about the type of Iris flower by looking at the length of its petals. If the petal length is less than 2.5 cm, it is likely to be Iris-setosa. If the petal length falls between 2.5 cm and 4.9 cm, it is probably Iris-versicolor. And if the petal length exceeds 4.9 cm, it is likely to be Iris-virginica. This simple rule helps us classify Iris flowers based on a single attribute.
+i can make a prediction about the type of Iris flower by looking at the length of its petals. If the petal length is less than 2.5 cm, it is likely to be Iris-setosa. If the petal length falls between 2.5 cm and 4.9 cm, it is probably Iris-versicolor. And if the petal length exceeds 4.9 cm, it is likely to be Iris-virginica. This simple rule helps us clssify Iris flowers based on a single attribut.
 
 Mean Bar Chart of Classes:
 
-The bar chart shows the average sizes of the petals and sepals for each type of Iris flower. We can compare the sizes of the different parts across the flower classes. Iris-setosa generally has the smallest average sizes, Iris-virginica has the largest, and Iris-versicolor falls in between. This information helps us understand the typical characteristics of each flower class.
+The bar chart shows the average sizes of the petals and sepals for each type of Iris flower.ican compare the sizes of the different parts across the flower classes. Iris-setosa generally has the smallest average sizes, Iris-virginica has the largest, and Iris-versicolor falls in between. This information helps to understand the typical characteristics of each flower class.
 
-By examining the different visualizations and summary measures, we gain insights into the sizes, relationships, and classification of the Iris flowers.
+By examining the different visualizations and summary measures, i gain insights into the sizes, relationships, and classification of the Iris flowers.
 ##
 Conclusion
 
