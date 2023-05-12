@@ -8,6 +8,22 @@
 - [Importance](#importance)
 - [Scope](#scope)
 - [Conclusion-of-intro](#conclusion-of-intro)
+- [Results](#results)
+- [Histograms-of-the-variables](#histograms-of-the-variables)
+- [Scatter-plots-of-variable-comparisons](#scatter-plots-of-variable-comparisons)
+- [Violin-plots](#violin-plots)
+- [Summary-description-of-variables](#summary-description-of-variables)
+- [Correlation-coefficient](#correlation-coefficient)
+- [Scatter-plot-matrix](#scatter-plot-matrix)
+- [Mean-bar-chart-of-classes](#mean-bar-chart-of-classes)
+- [Predicting-species](#predicting-species)
+- [Conclusion](#conclusion)
+- [How-to-intro](#how-to-intro)
+- [Data-prep](#data-prep)
+- [Dependencies](#dependencies)
+- [Consolidated-code-comments](#consolidated-code-comments)
+- [Licensing](#licensing)
+- [Reference-list](#reference-list)
 ## What-is-it
 
 The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis.[1] It is sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species.[2] Two of the three species were collected in the Gaspé Peninsula "all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus".[3]
@@ -65,7 +81,7 @@ To focus on exploratory data analysis techniques and visualizations rather than 
 
 ## Results
 
-### Histograms of the Variables:
+### Histograms-of-the-variables:
 
 The histograms I generated provide an easy visualisation of the distribution of the variables. Here, it shows how often certain sizes appear in the dataset. By looking at the shape of the histograms it becomes possible to see the patterns and characteristics. Looking at the bell-shaped distribution for sepal length and width, for example - seems to show that most of the flowers have similar sizes in these dimensions. On the other hand though, the two peaks in the histograms of petal length and width shows the existence of distinct groups or clusters within the dataset. This - to me - means that some flowers have shorter and narrower petals, while others have longer and wider ones. Also, just by looking closely at the hists you can gain some valuable insights into the range and variation of sizes in different attributes of the Iris flowers. For example; Size range, shape and distribution, outliers to name but three. For the range of sizes - sepal length ranges from about 4.3 to 7.9 centimeters whereas petal width ranges from around 0.1 to 2.5 centimeters. Just by understanding and noting these ranges, it becomes possible us more easily grasp the diversity and variability of the Iris flowers' attributes.
 ### Sources used to achieve the histograms
@@ -73,7 +89,7 @@ The histograms I generated provide an easy visualisation of the distribution of 
 - https://www.nickmccullum.com/python-visualization/histogram/ - I was mostly familair with how to create histograms from the plot.py tank but regardless, used this source to go over it again. 
 
 
-### Scatter Plots of Variable Comparisons:
+### Scatter plots of variable comparisons:
 
 The 6 variable comparison scatter plots are good for visualisations of the iris dataset as they can show how the sizes of different parts of the Iris flowers are related to each other. Specifically, the results for each comparison is below:
 
@@ -101,7 +117,7 @@ Lastly, comparing petal length to its width, there appears to be a connaction al
 
 
 
-### Violin Plots:
+### Violin-plots:
 
 The 4 violin plots  were generated as I wanted another way to showcase the relationship between the variables and the classes. I chose violin plot as I couldn't get box plots to work properly and violin plots seemed to work better regardless. 
 
@@ -153,7 +169,7 @@ So, to summarise the above violin plots; The plots allowed me to visualise and g
 
 
 
-### Summary Description of Variables:
+### Summary-description-of-variables:
 
 The variable summary description shows some useful numbers and data about the sizes of the 4 variables. They show the count, mean, standard deviation, min, 25%, 50%, 75% and max data point. By coding this, it makes it easy to see - for example - average sizes and how much they may vary. An example being that, on average, sepal length is around 5.84 cm, the sepal width is approximately 3.05 cm, the petal length is around 3.76cm whereas petal width is around 1.20 cm. This fairly simple data give us a general idea of the typical sizes of the different parts.
 
@@ -172,7 +188,7 @@ max        7.900000     4.400000      6.900000     2.500000
 - https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/ - Showed me what each heading meant, what the number should be, how to code an implementation. Had to change code to output to a single file called variable_descriptions.
 
 
-### Correlation Coefficient:
+### Correlation-coefficient:
 
 The correlation coefficient below shows how closely or not two variables are related to each other. It also measures the strength and direction of the relationship. Below are the completed results:
 
@@ -199,7 +215,7 @@ These correlation coefficients give good insights into how the variables are rel
 - https://www.geeksforgeeks.org/exploring-correlation-in-python/ - Used to learn how to code it. Adapted it to the iris data set as couldn't find good enough source. 
 
 
-### Scatter Plot Matrix:
+### Scatter-plot-matrix:
 
 Next I performed a scatter plot matrix. This was chosen as an additional way to do some exploratory analysis between the relationship between the variables and the three classes. It shows several scatter plots that compare pairs of variables, though I'm not sure it's very well laid out. 
 
@@ -232,7 +248,7 @@ So, the scatter plot matrix gives a visual way to understand how the different m
 - https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset - Used to learn how to code it for my applications.
 - https://vitalflux.com/what-when-how-scatterplot-matrix-pairplot-python/ - Got the guts of my code and inspiration from this resource. Showed me how to do most all of it. 
 
-### Mean Bar Chart of Classes:
+### Mean-bar-chart-of-classes:
 This was done to perform an additional fairly straight-forward exploratory of the relationship between the classes and the variables.
 
 #### Iris-setosa:
@@ -248,7 +264,7 @@ These average values give some idea of the sizes of the different variables in e
 ### Sources needed for mean bar chart
 - https://pythonguides.com/matplotlib-plot-bar-chart/ - not too hard, just used to know how to generally plot a bar chart. 
 
-### Predicting species with assumed sepal length using function and IF statement
+### Predicting-species
 
 For this, I wanted to try a very basic and limited sort of machine learning alternative code that predicts the iris class based on the sepal length of the flower. The code takes the sepal length as input and uses a prediction of the iris class.
 
@@ -283,12 +299,10 @@ Many failed attempts at box plotting and KNN machine learning went by the way si
 By undertaking these analyses and visualization techniques - I hope I have accomplished my mission of exploring and comprehending the Iris dataset by unraveling its relationships, patterns, and unique traits among the different types of iris flowers.
 
 
-## How to
-
-### Introduction:
+## How-to-intro
 The goal here is to provide instructions on how to replicate the analysis and visualizations I performed on the Iris dataset. By following these instructions, you can gain insights into the dataset and explore the relationships between variables and the classes.
 
-### Data Preparation:
+### Data-prep:
 - Download the Iris dataset or import it from a specific source. I imported it and saved it as iris.data and used this when manipulating its data afterwards.
 - Ensure that the required python libraries like Pandas, NumPy, Matplotlib, and Seaborn are installed. If not, install what libraries you may need depending on your project specifics. For me, the aforementioned were used. 
 - Import the necessary modules and load the dataset into your Python environment.
@@ -332,7 +346,7 @@ Input the sepal length value of less than 5.84 to be setosa, if not that but bel
 - Numpy 
 - Seaborn
 
-## (Mostly) Consolidated final code blocks and more detailed comments
+## Consolidated-code-comments
 
 ```import pandas as pd
 import matplotlib.pyplot as plt
@@ -478,7 +492,7 @@ plt.savefig('correlation_coefficients.png', dpi=300)
 Free to use
 
 
-## Reference List
+## Reference-list
 
 1 - scikit-learn. (n.d.). The Iris Dataset. [online] Available at: https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html
 2 - pandas.pydata.org. (n.d.). How do I create plots in pandas? — pandas 2.0.1 documentation. [online] Available at: https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/04_plotting.html#min-tut-04-plotting [Accessed 12 May 2023]
