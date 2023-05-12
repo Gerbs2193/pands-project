@@ -3,12 +3,16 @@
 Load the Iris dataset into a pandas dataframe and display the first few rows/then all
 Output a summary of each variable to the console
 Save a histogram of each variable to a png file
-Output a summary of each variable to a text file
+Output a summary of each variable to 1 text file
 Create a scatter plot of sepal length vs sepal width and save it to a png file
 Create scatter plots the var comparisona - sepal length vs petal length, sepal length vs petal width, sepal width vs petal length, and sepal width vs petal width, and save each to a png file
 Add labels and titles to the scatter plots
 Color the scatter plots by class
-Create function to generate scatter plots for any two variables and save them to png files """
+Perform violin plots
+Do a scatter matrix if possible
+alternative prediction to machine learning
+bar chart
+ """
 
 #Import the required libraries for data analysis and visualization
 import pandas as pd
@@ -39,7 +43,7 @@ def predict_species(sepal_length):
     if sepal_length < 5.84:
         return 'Iris-setosa'
     elif sepal_length < 6.62:
-        return 'Iris-versicolor'
+        return 'Iris-versicolour'
     else:
         return 'Iris-virginica'
 
